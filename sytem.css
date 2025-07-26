@@ -13,7 +13,6 @@
 
 body {
     overflow-x: hidden;
-    overflow-y: hidden;
 }
 
 .navbar {
@@ -257,7 +256,11 @@ body {
 
     .card2 {
         top: 700px;
+        position: relative;
+        left: 200px;
     }
+
+    
 
     .card3 {
         position: relative;
