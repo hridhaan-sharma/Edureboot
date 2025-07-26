@@ -1,0 +1,396 @@
+ @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*,*::before, *::after {
+    box-sizing:border-box;
+}
+
+* {
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    font-family: "Montserrat","sans-seriff";
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.navbar {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding-top: 45px;
+    background-color: #000000;
+    height: 180px;
+    width: 110vw;
+}
+
+
+.nav_heading { 
+    font-size: 5.5rem;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 800;
+    position: relative;
+    right:100px;
+    bottom: 15px;
+}
+
+.menu {
+    padding-left: 100px;
+    position: relative;
+    bottom: 10px;
+}
+
+.link {
+     text-decoration: none;
+     font-size:1.5rem;
+     color:white;
+     text-decoration: none;
+     padding-left: 100px;
+     transition:all ease 1s;
+}
+
+.link:hover {
+    color: #01bf71;
+    transition: all ease 1s;
+}
+
+.nav_button {
+    padding:15px 55px;
+    position: relative;
+    left: 90px;
+    border-radius: 5px;
+    border: none;
+    background-color: #01bf71;
+    cursor: pointer;
+}
+
+.sign_up_link {
+    text-decoration: none;
+    color: #000000;
+    font-size: 1.5rem;
+    background-color:#01bf71;
+    font-weight: 600;
+
+}
+
+/* System Section */
+.system {
+    background-color: #000000;
+    width: 110vw;
+    height: 100vh;
+}
+
+.system_heading {
+    color: #f9f9f9;
+    font-size: 4rem;
+    position: relative;
+    left: 825px;
+    top: 40px;
+}
+
+.card_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 110px;
+    right: 200px;
+}
+
+.card1,.card2,.card3 {
+    width: 500px;
+    height: 650px;
+    border: none;
+    background-color: #fff;
+    border-radius: 10px; 
+    transition: all ease 1s;
+}
+
+.card1 {
+    position: relative;
+
+}
+
+.card2 {
+    position: relative;
+    left: 100px;
+}
+
+.card3 {
+    position: relative;
+    left: 200px;
+}
+
+.card_heading1 {
+ font-size: 2.2rem;
+    position: relative;
+    left:105px;
+    top: 90px;
+}
+
+.card_heading2 {
+ font-size: 2.2rem;
+    position: relative;
+    left:105px;
+    top: 80px;
+}
+
+.card_heading3 {
+    font-size: 2.2rem;
+    position: relative;
+    left:105px;
+    top: 105px;
+}
+
+.heading_middle1 {
+    position: relative;
+    right:205px;
+    top: 40px;
+}
+
+.heading_middle2 {
+    position: relative;
+    right:245px;
+    top: 40px;
+}
+
+.heading_middle3 {
+    position: relative;
+    right:245px;
+    top: 40px;
+}
+
+.card_desc1 {
+    font-size: 1.4rem;
+    position: relative;
+    top: 160px;
+    font-weight: 500;
+    width: 450px;
+    left:40px;
+}
+
+.card_desc2 {
+    font-size: 1.4rem;
+    position: relative;
+    top: 150px;
+    font-weight: 500;
+    width: 450px;
+    left:40px;
+}
+
+.card_desc3 {
+    font-size: 1.4rem;
+    position: relative;
+    top: 175px;
+    font-weight: 500;
+    width: 450px;
+    left:40px;
+}
+
+
+.card_img1 {
+    width: 260px;
+    position: relative;
+    top: 50px;
+    left: 120px;
+}
+
+
+.card_img2 {
+    width: 250px;
+    position: relative;
+    top: 45px;
+    left: 120px;
+}
+
+.card_img3 {
+    width: 270px;
+    position: relative;
+    top: 65px;
+    left: 120px;
+}
+
+.card1:hover,.card2:hover,.card3:hover {
+    height: 690px;
+    width: 510px;
+    cursor: pointer;
+    transition: all ease-in-out 1s;
+}
+
+/* Responsive */
+@media screen and (max-width:1675px) {
+
+    body {
+        background-color: #000000;
+    }
+        .navbar {
+        display: flex;
+        justify-content: space-between;
+        height: 110px;
+        z-index: 1;
+        width: 180vw;
+        max-width: 1300px;
+        padding: 0;
+    }
+    .nav_heading {
+        font-size: 4.25rem;
+        padding-left: 250px;
+        padding-top:70px ;
+    }
+
+    .menu {
+        opacity:0;
+    }
+
+    .system_heading {
+        position: relative;
+        left:350px;
+    }
+    
+    .card1 {
+        position: relative;
+        left: 400px;
+    }
+
+    .card2 {
+        top: 700px;
+        position: relative;
+        left: 200px;
+    }
+
+    
+
+    .card3 {
+        position: relative;
+        left: 00px;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        height: 110px;
+        z-index: 1;
+        width: 100%;
+        max-width: 1300px;
+        padding: 0;
+    }
+    .nav_heading {
+        font-size: 4rem;
+        padding-left: 250px;
+        padding-top:70px ;
+    }
+
+    .system_heading {
+        position: relative;
+        left: 100px;
+        font-size: 3rem;
+    }
+
+}
+
+@media screen and (max-width:1760px) and (min-width: 1400px ){
+    .system_heading {
+        position: relative;
+        left: 500px;
+    }
+}
+
+@media screen and (max-width:660px) {
+    .system_heading {
+    position: relative;
+    left: 70px;
+    font-size: 2.5rem;
+    }
+
+}
+
+@media screen and (max-width:1310px) {
+.card_heading1 {
+ font-size: 2.2rem;
+  position: relative;
+ left: 75px;
+
+}
+
+.card_heading2 {
+ font-size: 2.2rem;
+ position: relative;
+ left: 90px;
+
+}
+
+.card_heading3 {
+    font-size: 2.2rem;
+    position: relative;
+ left: 80px;
+
+}
+
+.heading_middle1 {
+    position: relative;
+
+}
+
+.heading_middle2 {
+    position: relative;
+    left: 40px;top: 10px;
+
+}
+
+.heading_middle3 {
+    position: relative;
+    left: 60px;top: 10px;
+
+}
+
+.card_desc1 {
+    font-size: 1.19rem;
+    position: relative;
+    left: 10px;
+    width: 450px;
+
+}
+
+.card_desc2 {
+    font-size: 1.19rem;
+    position: relative;
+    left: 10px;
+    width: 450px;
+
+}
+
+.card_desc3 {
+    font-size: 1.19rem;
+    position: relative;
+    left: 10px;
+    width: 450px;
+   top: 145px;
+
+}
+.card_img1 {
+    width: 260px;
+    position: relative;
+    top: 50px;
+    left: 100px;
+}
+
+
+.card_img2 {
+    width: 250px;
+    position: relative;
+    top: 45px;
+    left: 85px;
+}
+
+.card_img3 {
+    width: 270px;
+    position: relative;
+    top: 65px;
+    left: 85px;
+}
+
+}
